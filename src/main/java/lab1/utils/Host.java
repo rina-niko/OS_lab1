@@ -54,8 +54,8 @@ public class Host {
         this.maskBin = maskBin;
     }
 
-    public List<Integer> getAddressNetWork() {
-        return addressNetWork;
+    public ArrayList<Integer> getAddressNetWork() {
+        return (ArrayList<Integer>) addressNetWork;
     }
 
     public void setAddressNetWork(List<Integer> addressNetWork) {
@@ -84,6 +84,8 @@ public class Host {
         System.out.println("Bin-IP: " + getIpBin());
         System.out.println("Bin-Mask: " + getMaskBin());
         System.out.println("Address NetWork: " + getAddressNetWork());
-
+        System.out.println("Broadcast: " + getBroadcast());
+        System.out.println("Count Address: " + getCountAddress());
+        System.out.println("-----------");
     }
 }
